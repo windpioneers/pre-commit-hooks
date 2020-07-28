@@ -1,5 +1,5 @@
 import argparse
-import os, re
+import re
 from typing import Optional
 from typing import Sequence
 import subprocess
