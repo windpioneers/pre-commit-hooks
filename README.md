@@ -31,7 +31,7 @@ Use this hook in your `.pre-commit-config.yaml` file like:
   - repo: https://github.com/windpioneers/pre-commit-hooks
     rev: 0.0.1
     hooks:
-      - id: check-branch-names
+      - id: check-branch-name
         args: 
           - '^master$'
           - '^dev$'
