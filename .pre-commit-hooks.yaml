@@ -1,0 +1,6 @@
+-   id: check-branch-name
+    name: Check Branch Name
+    description: This pre-commit hook checks that a branch name is valid (against one or more regexes) prior to allowing any commits on that branch.
+    require_serial: false
+    language: python3
+    entry: check-branch-name
