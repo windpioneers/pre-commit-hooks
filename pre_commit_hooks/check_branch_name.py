@@ -16,7 +16,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         help='Valid regexes for a branch name',
     )
 
-    current_branch_name = subprocess.check_output(['git', 'rev-parse', '--abbrev-ref', 'HEAD'])
+    current_branch_name = subprocess.check_output(['git', 'rev-parse', '--abbrev-ref', 'HEAD']).decode('ascii').strip()
 
     args = parser.parse_args(argv)
     for regexp in args.regexes:
